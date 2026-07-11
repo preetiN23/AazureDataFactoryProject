@@ -1,0 +1,26 @@
+{
+	"name": "ds_sqlserver_source_tables_param",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqlserver_param",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "payer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "payer_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "raw_payers"
+		}
+	}
+}
