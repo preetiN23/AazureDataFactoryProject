@@ -1,0 +1,20 @@
+{
+	"name": "ds_adls_landing_parquet_param",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_param",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Raw/dm",
+				"fileSystem": "dev-raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
