@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Raw/dm",
-				"fileSystem": "dev-raw"
+				"fileSystem": "landing"
 			},
 			"compressionCodec": "snappy"
 		},
