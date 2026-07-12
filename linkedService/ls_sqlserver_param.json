@@ -6,12 +6,12 @@
 		"type": "SqlServer",
 		"typeProperties": {
 			"server": "localhost\\SQLEXPRESS",
-			"database": "dev_HealthConnect_raw",
+			"database": "dev_clintrail_edc_src",
 			"encrypt": "optional",
 			"trustServerCertificate": false,
-			"authenticationType": "Windows",
-			"userName": "DESKTOP-4NLCKD7\\Admin",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1ZThiODc5NS01OGYzLTQzYzEtOGZkNy0yMTUxOWFhNDNmNGQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"authenticationType": "SQL",
+			"userName": "adf_login",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlMjIxNTE1Ny1mZDliLTRlYzItOTFkOC1jN2EyMzg2NmIxYzQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "shir-local-computer",
