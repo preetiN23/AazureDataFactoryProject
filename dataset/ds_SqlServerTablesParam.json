@@ -1,0 +1,73 @@
+{
+	"name": "ds_SqlServerTablesParam",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqlserver_param",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MetadataId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SrcServerName",
+				"type": "varchar"
+			},
+			{
+				"name": "SrcDatabaseName",
+				"type": "varchar"
+			},
+			{
+				"name": "SrcSchemaName",
+				"type": "varchar"
+			},
+			{
+				"name": "SrcTableName",
+				"type": "varchar"
+			},
+			{
+				"name": "IngestionType",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkColName",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkColValue",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "StorageAccName",
+				"type": "varchar"
+			},
+			{
+				"name": "LandingContainerName",
+				"type": "varchar"
+			},
+			{
+				"name": "Enabled",
+				"type": "varchar"
+			},
+			{
+				"name": "CreatedDateTime",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ModifiedDateTime",
+				"type": "datetime2",
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "edcsrcmetadata",
+			"table": "srcEdcClintrailToLandControl"
+		}
+	}
+}
