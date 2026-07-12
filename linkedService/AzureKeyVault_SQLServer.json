@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault_SQLServer",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-clintrial-dev1.vault.azure.net/"
+		}
+	}
+}
