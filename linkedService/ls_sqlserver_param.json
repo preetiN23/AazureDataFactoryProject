@@ -1,6 +1,5 @@
 {
 	"name": "ls_sqlserver_param",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "SqlServer",
@@ -11,11 +10,19 @@
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "adf_login",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlMjIxNTE1Ny1mZDliLTRlYzItOTFkOC1jN2EyMzg2NmIxYzQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_SQLServer",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kv-sqlserver-pass"
+			}
 		},
 		"connectVia": {
 			"referenceName": "shir-local-computer",
 			"type": "IntegrationRuntimeReference"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
