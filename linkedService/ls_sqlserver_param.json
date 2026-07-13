@@ -1,11 +1,19 @@
 {
 	"name": "ls_sqlserver_param",
 	"properties": {
+		"parameters": {
+			"pLsServerName": {
+				"type": "string"
+			},
+			"pLsDatabasename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"server": "localhost\\SQLEXPRESS",
-			"database": "dev_clintrail_edc_src",
+			"server": "@{linkedService().pLsServerName}",
+			"database": "@{linkedService().pLsDatabasename}",
 			"encrypt": "optional",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
