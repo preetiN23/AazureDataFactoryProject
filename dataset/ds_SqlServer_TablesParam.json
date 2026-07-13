@@ -31,6 +31,16 @@
 		},
 		"annotations": [],
 		"type": "SqlServerTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().pDsSchemaName",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().pDsTableName",
+				"type": "Expression"
+			}
+		}
 	}
 }
