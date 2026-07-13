@@ -5,6 +5,17 @@
 			"referenceName": "ls_adls_param",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"pDsContainerName": {
+				"type": "string"
+			},
+			"pDsFolderName": {
+				"type": "string"
+			},
+			"pDsFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
