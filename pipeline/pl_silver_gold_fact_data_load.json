@@ -83,32 +83,32 @@
 							"typeProperties": {
 								"notebookPath": "/Users/preetipharate23@gmail.com/Azure-Databricks-Project/silver_gold_load/nb_gold_fact",
 								"baseParameters": {
-									"srcCatalog": {
+									"entityName": {
+										"value": "@item().EntityName",
+										"type": "Expression"
+									},
+									"srcCatalog    ": {
 										"value": "@item().SrcCatalog",
 										"type": "Expression"
 									},
-									"srcSchema": {
+									"srcSchema    ": {
 										"value": "@item().SrcSchema",
 										"type": "Expression"
 									},
-									"srcTableName": {
+									"srcTableName  ": {
 										"value": "@item().SrcTableName",
 										"type": "Expression"
 									},
-									"tgtCatalog": {
+									"tgtCatalog    ": {
 										"value": "@item().TgtCatalog",
 										"type": "Expression"
 									},
-									"tgtSchema": {
+									"tgtSchema   ": {
 										"value": "@item().TgtSchema",
 										"type": "Expression"
 									},
-									"tgtTableName": {
+									"tgtTableName  ": {
 										"value": "@item().TgtTableName",
-										"type": "Expression"
-									},
-									"scdType": {
-										"value": "@item().ScdType",
 										"type": "Expression"
 									},
 									"businessKey": {
