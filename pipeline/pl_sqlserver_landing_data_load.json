@@ -1,5 +1,5 @@
 {
-	"name": "pl_SQLserverSrc_ADLSGen2Landing",
+	"name": "pl_sqlserver_landing_data_load",
 	"properties": {
 		"activities": [
 			{
