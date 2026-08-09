@@ -1,5 +1,5 @@
 {
-	"name": "pl_sqlserver_to_adls",
+	"name": "pl_sql_to_adls",
 	"properties": {
 		"activities": [
 			{
